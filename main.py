@@ -21,7 +21,7 @@ TODO = None
 JINJA_ENV = jinja2.Environment(
     loader=jinja2.FileSystemLoader(
         os.path.join(os.path.dirname(__file__), 'templates')),
-    extensions=['jinja2.ext.autoescape'])
+    extensions=['jinja2.ext.autoescape'], autoescape=True)
 
 MEME_TEMPLATES = collections.OrderedDict([
     ('happyboy', 'happyboy.jpeg'),
